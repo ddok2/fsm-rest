@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+
+  automation_tester:    
+    container_name: automation_tester
+    image: automation_tester
+    volumes:
+      - ./automation_tester:/usr/local/automation_tester/log
+    ports:
+      - 80:80
