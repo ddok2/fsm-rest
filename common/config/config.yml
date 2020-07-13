@@ -1,0 +1,25 @@
+version: '2'
+
+tester:
+  port: 8089
+  operationMode: blockchain #exchange or blockchain
+  txInterval: 1000
+  remittanceAmount: 100
+  remittanceFee: 0
+  chargeAmount: 10000
+  adminChargeAmount: 10000000000
+  transactionSendCount: 2000
+
+booster:
+  addr: txbooster.nuriflex.com
+  port: 8080
+
+exchange:
+  addr: dex
+  port: 8080
+
+members:
+  count: 10
+  prefix: caaaa
+  adminId: NURI-GENERAL
+  trashId: NURI-TRASH
