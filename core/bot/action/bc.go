@@ -160,7 +160,7 @@ func (b *BcBotAction) Trade(origin *bot.Bot, target *bot.Bot) (bool, error) {
 		// issue to user from admin
 		body.Amount = b.jobs.Config.ChargeAmount
 		body.TxFlag = "2"
-		isDone, err = b.requestHandler("/trade", body)
+		_, err = b.requestHandler("/trade", body)
 		if err != nil {
 			return false, err
 		}
