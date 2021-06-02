@@ -1,0 +1,25 @@
+version: '3.4'
+
+networks:
+  nuriflex:
+    external:
+      name: nuriflex-net
+
+services:
+  automation:
+    image: automation:latest
+    logging:
+      driver: "json-file"
+      options:
+        max-file: "10"
+        max-size: "100m"
+    deploy:
+      mode: replicated
+      replicas: 1
+      restart_policy:
+        condition: on-failure
+        delay: 3s
+    networks:
+      nuriflex:
+        aliases:
+          - automation.nuriflex.com
