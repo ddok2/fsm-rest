@@ -1,5 +1,5 @@
 # fsm rest for test 
-[![Go Report Card](https://goreportcard.com/badge/github.com/ddok2/fsm-rest)](https://goreportcard.com/report/github.com/ddok2/fsm-rest)
+[![Go Report Card](https://goreportcard.com/badge/github.com/ddok2/fsm-rest)](https://goreportcard.com/report/github.com/ddok2/fsm-rest) [![Total alerts](https://img.shields.io/lgtm/alerts/g/ddok2/fsm-rest.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/ddok2/fsm-rest/alerts/)
 
 using state machines for test.
 
